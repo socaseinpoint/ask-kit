@@ -33,24 +33,6 @@ ASK Kit is a unified npm package that accelerates development of Telegram mini-a
 - Utility functions
 - Testing frameworks
 
-## Key Benefits
-
-- **Quick time-to-market** - MVP in 30 days
-- **Modular architecture** - Use only what you need
-- **Type-safe codebase** - Full TypeScript support
-- **Battle-tested components** - Production-ready modules
-- **Comprehensive documentation** - Guides and examples
-- **Active development** - Regular updates and improvements
-
-## Use Cases
-
-- Brands, Retail, eCom applications
-- Media, Influencers, and Communities
-- EdTech and Online Schools
-- Events, Offline Locations, and Festivals
-- Web3 / TON Projects
-- Product/SaaS Teams
-
 ## Installation
 
 ### npm

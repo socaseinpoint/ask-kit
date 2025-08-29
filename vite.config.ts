@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import dts from 'vite-plugin-dts'
@@ -34,6 +35,28 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+    },
+  },
+  // Vitest configuration
+  test: {
+    globals: true,
+    environment: 'node',
+    include: ['src/**/*.{test,spec}.{js,ts}', 'tests/**/*.{test,spec}.{js,ts}'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*.{js,ts}'],
+      exclude: [
+        'node_modules/',
+        'dist/',
+        'coverage/',
+        'examples/',
+        'scripts/',
+        '**/*.d.ts',
+        '**/*.test.{js,ts}',
+        '**/*.spec.{js,ts}',
+        'src/index.ts', // Main export file
+      ],
     },
   },
 })
