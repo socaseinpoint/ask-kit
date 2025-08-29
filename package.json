@@ -33,7 +33,7 @@
     "type-check": "tsc --noEmit",
     "update-version": "node scripts/update-version.cjs",
     "preversion": "npm run lint:check && npm run type-check",
-    "postversion": "npm run update-version && npm run build",
+    "postversion": "npm run update-version && npm run build && git add src/index.ts && git commit --amend --no-edit",
     "prepublishOnly": "npm run lint:check && npm run type-check && npm run build",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
