@@ -16,6 +16,7 @@ export default [
       '**/*.umd.cjs',
       '**/*.js.map',
       '**/*.d.ts.map',
+      'scripts/**/*.cjs',
     ],
   },
   {
