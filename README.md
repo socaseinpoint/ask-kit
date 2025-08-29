@@ -1,78 +1,77 @@
-# ASK (AppSolution Social Kit)
+# ASK Kit (AppSolution Social Kit)
 
-A comprehensive gamification engine for Telegram mini-apps that enables rapid development of engaging social applications.
+A comprehensive npm package containing reusable modules, templates, guides, and scripts for rapid development of Telegram mini-apps with gamification features.
 
 ## Overview
 
-ASK is a ready-to-use gamification engine for Telegram that allows you to launch mini-apps with quests, streaks, giveaways, referral systems, internal currency, notifications, and analytics out of the box. Launch your MVP in 30 days.
+ASK Kit is a unified npm package that accelerates development of Telegram mini-apps by providing ready-to-use modules for gamification, social features, and engagement mechanics. Contains reusable code, templates, development guides, and automation scripts to help you launch your MVP in 30 days.
 
-## Core Features
+## Package Contents
 
-- Quick time-to-market (MVP in 30 days)
-- Modular architecture
-- Analytics & admin panel in Telegram
-- CI/CD with typed code
-- Cross-platform compatibility
-- Real-time growth metrics
-- High-load ready architecture
+### Reusable Modules
+- Quest and task management systems
+- Streak tracking and rewards
+- Referral system components
+- Internal currency and economy
+- Notification services
+- Analytics and metrics
+- User engagement features
 
-## Core Modules
+### Templates & Guides
+- Project structure templates
+- Development best practices
+- Integration guides
+- Configuration examples
 
-### Core Systems (Ready)
+### Development Tools
+- Build and deployment scripts
+- Type definitions
+- Utility functions
+- Testing frameworks
 
-- **Telegram SDK Integration**: Fullscreen mode, haptics, bot integration, formatted notifications
-- **Roles and Access**: Flexible role/permission model + user statuses
-- **Admin Panel**: Operational management and support commands in Telegram
-- **Currency Management**: Internal currency, multi-currency support, integration API
-- **Rewards Management**: Unified reward system, audit and fraud protection
-- **Notifications**: Orchestration, frequency limits, prioritization
-- **Analytics**: Real-time activity, economics, and conversion tracking
-- **User Level System**: Levels, gating, visual progression
-- **CI/CD & Quality**: Types, modularity, auto-tests, auto-deploy
+## Key Benefits
 
-### Engagement Modules (Ready)
-
-- **Referral System**: Invitation rewards + mutual assistance mechanics
-- **Daily Login Streak**: Habit formation, configurable rewards
-- **Marketplace**: In-game/external content purchases
-- **Leaderboards**: Flexible criteria, separate tables
-- **Tournaments**: Scheduled events, rewards for places/points
-- **Tasks**: One-time/daily/weekly + onboarding widget
-- **Treasure/Crates**: Chance boxes for special currency
-- **Surveys**: Segmentation and personalized offers based on results
-
-### Advanced Modules (On Request)
-
-- **Alliances/Guilds**: Team mechanics and shared goals
-- **Telegram Stars**: Micropayments via Telegram's built-in currency
-- **Leagues/Seasons**: Temporary events and seasonal content
-- **Telegram Wallet**: Integration with Telegram's crypto wallet
-- **Custom Mechanics**: Unique game elements for your project
+- **Quick time-to-market** - MVP in 30 days
+- **Modular architecture** - Use only what you need
+- **Type-safe codebase** - Full TypeScript support
+- **Battle-tested components** - Production-ready modules
+- **Comprehensive documentation** - Guides and examples
+- **Active development** - Regular updates and improvements
 
 ## Use Cases
 
-- Brands, Retail, eCom
+- Brands, Retail, eCom applications
 - Media, Influencers, and Communities
 - EdTech and Online Schools
 - Events, Offline Locations, and Festivals
 - Web3 / TON Projects
 - Product/SaaS Teams
 
-## Technical Highlights
+## Installation
 
-- Scalable architecture
-- 24/7 monitoring
-- Type-safe codebase
-- Automated deployments
-- Quality control
-- Cross-device compatibility
+```bash
+npm install ask-kit
+```
 
-## Support
+## Quick Start
 
-- Documentation and API references
-- Source code access (with ASK license)
-- 30-day post-release support
-- Technical consultation
+```javascript
+import { QuestModule, RewardSystem, Analytics } from 'ask-kit';
+
+// Initialize core modules
+const questSystem = new QuestModule(config);
+const rewards = new RewardSystem(config);
+const analytics = new Analytics(config);
+```
+
+## Technical Features
+
+- Scalable modular architecture
+- Full TypeScript support
+- Cross-platform compatibility
+- Real-time features
+- High-load ready components
+- Automated testing and quality control
 
 ## Contact
 

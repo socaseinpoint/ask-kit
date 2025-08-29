@@ -1,5 +1,5 @@
 {
-  "name": "ask-engine",
+  "name": "ask-kit",
   "version": "0.0.1",
   "description": "A comprehensive gamification engine for Telegram mini-apps that enables rapid development of engaging social applications.",
   "main": "index.js",
