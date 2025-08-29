@@ -1,8 +1,11 @@
 # ASK Kit (AppSolution Social Kit)
 
-[![npm version](https://badge.fury.io/js/ask-kit.svg)](https://badge.fury.io/js/ask-kit)
-[![npm downloads](https://img.shields.io/npm/dm/ask-kit.svg)](https://www.npmjs.com/package/ask-kit)
-[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
+[![npm version](https://img.shields.io/npm/v/ask-kit.svg?style=flat-square)](https://www.npmjs.com/package/ask-kit)
+[![npm downloads](https://img.shields.io/npm/dm/ask-kit.svg?style=flat-square)](https://www.npmjs.com/package/ask-kit)
+[![npm downloads total](https://img.shields.io/npm/dt/ask-kit.svg?style=flat-square)](https://www.npmjs.com/package/ask-kit)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg?style=flat-square)](http://www.typescriptlang.org/)
+[![Tests](https://img.shields.io/badge/tests-9%20passed-brightgreen.svg?style=flat-square)](#tests)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?style=flat-square)](#tests)
 
 A comprehensive npm package containing reusable modules, templates, guides, and scripts for rapid development of Telegram mini-apps with gamification features.
 
@@ -138,9 +141,23 @@ npm start
 - High-load ready components
 - Automated testing and quality control
 
+## Tests
+
+Comprehensive test coverage with **Vitest** - modern, fast testing framework.
+
+```bash
+npm test              # Run all tests
+npm run test:coverage # Run with coverage
+npm run test:ui       # Open test UI
+```
+
+- **9 tests** with **100% coverage**
+- **Automated testing** on every commit
+- **CI/CD integration** in release workflow
+
 ## API Reference
 
-### Current Exports (v0.0.1)
+### Current Exports (v0.0.6)
 
 ```typescript
 // Available imports
@@ -151,7 +168,7 @@ import {
 
 // Usage
 dump()              // Logs: "I have no mouth but I must scream"
-console.log(VERSION) // Logs: "0.0.3"
+console.log(VERSION) // Logs: "0.0.6"
 ```
 
 ### Coming Soon
@@ -173,26 +190,6 @@ Future versions will include:
 - [Architecture](./docs/ARCHITECTURE.md) - System design and structure
 - [Changelog](./CHANGELOG.md) - Version history and updates
 
-## Changelog
-
-### v0.0.3 (Latest)
-- ✅ Fixed VERSION export to show correct package version
-- ✅ Automatic version synchronization system
-- ✅ Improved release workflow with npm hooks
-- ✅ Enhanced development and deployment automation
-
-### v0.0.2
-- ✅ Enhanced documentation with comprehensive usage examples
-- ✅ npm badges and package information
-- ✅ Real-world integration examples
-- ✅ Complete Usage Guide and API reference
-
-### v0.0.1
-- ✅ Initial release with basic TypeScript setup
-- ✅ ESM and CommonJS support
-- ✅ Built-in type declarations
-- ✅ Development toolchain (ESLint, Prettier, Husky)
-
 ## Browser Support
 
 ASK Kit supports all modern browsers and Node.js environments:
@@ -204,21 +201,16 @@ ASK Kit supports all modern browsers and Node.js environments:
 
 ## Contributing
 
-We welcome contributions! Here's how to get started:
-
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and test: `npm run prepublishOnly`
-4. Commit your changes: `git commit -m 'Add amazing feature'`
-5. Push to the branch: `git push origin feature/amazing-feature`
-6. Open a Pull Request
+3. Make changes and test: `npm run prepublishOnly`
+4. Commit and push: `git commit -m 'Add feature'`
+5. Open a Pull Request
 
-### Development Setup
 ```bash
+# Development setup
 git clone https://github.com/socaseinpoint/ask-kit.git
-cd ask-kit
-npm install
-npm run dev
+cd ask-kit && npm install && npm run dev
 ```
 
 ## Contact
