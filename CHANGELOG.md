@@ -5,6 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.2] - 2024-12-28
+
+### Added
+- Enhanced README.md with comprehensive usage examples
+- npm badges (version, downloads, TypeScript)
+- Real-world integration examples (Telegram mini-apps, Node.js servers)
+- Complete API reference documentation
+- Browser compatibility information
+- CDN usage examples
+- Comprehensive Usage Guide (`docs/USAGE.md`)
+- CHANGELOG.md for version tracking
+- Development setup instructions
+- Troubleshooting section
+
+### Improved
+- Better package information display (size, files count, etc.)
+- Enhanced Quick Start section with practical examples
+- More detailed installation instructions (npm, yarn, pnpm)
+- Contributing guidelines with development setup
+- Documentation structure and navigation
+
+### Technical
+- Added CHANGELOG.md to published package files
+- Verified package works correctly in both ESM and CommonJS environments
+- Tested installation and usage from npm registry
+
 ## [0.0.1] - 2024-12-28
 
 ### Added

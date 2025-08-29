@@ -169,7 +169,7 @@ import {
 
 // Usage
 dump()              // Logs: "I have no mouth but I must scream"
-console.log(VERSION) // Logs: "0.0.1"
+console.log(VERSION) // Logs: "0.0.2"
 ```
 
 ### Coming Soon
@@ -193,14 +193,19 @@ Future versions will include:
 
 ## Changelog
 
-### v0.0.1 (Latest)
-- ✅ Initial release
-- ✅ Basic TypeScript setup with Vite
+### v0.0.2 (Latest)
+- ✅ Enhanced documentation with comprehensive usage examples
+- ✅ npm badges and package information
+- ✅ Real-world integration examples
+- ✅ Complete Usage Guide and API reference
+- ✅ Browser compatibility and CDN support
+- ✅ Troubleshooting and development setup
+
+### v0.0.1
+- ✅ Initial release with basic TypeScript setup
 - ✅ ESM and CommonJS support
 - ✅ Built-in type declarations
-- ✅ Example utilities (`dump`, `VERSION`)
-- ✅ Complete development toolchain (ESLint, Prettier, Husky)
-- ✅ Documentation and examples
+- ✅ Development toolchain (ESLint, Prettier, Husky)
 
 ## Browser Support
 

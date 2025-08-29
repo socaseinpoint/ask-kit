@@ -31,6 +31,9 @@
     "format": "prettier --write \"src/**/*.{ts,js}\" \"examples/**/*.{ts,js}\"",
     "format:check": "prettier --check \"src/**/*.{ts,js}\" \"examples/**/*.{ts,js}\"",
     "type-check": "tsc --noEmit",
+    "update-version": "node scripts/update-version.cjs",
+    "preversion": "npm run lint:check && npm run type-check",
+    "postversion": "npm run update-version && npm run build",
     "prepublishOnly": "npm run lint:check && npm run type-check && npm run build",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -78,7 +81,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/socaseinpoint/ask-kit.git"
+    "url": "git+https://github.com/socaseinpoint/ask-kit.git"
   },
   "homepage": "https://github.com/socaseinpoint/ask-kit#readme",
   "bugs": {
