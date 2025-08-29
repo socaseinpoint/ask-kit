@@ -69,6 +69,18 @@
     "modules",
     "typescript"
   ],
-  "author": "socaseinpoint",
-  "license": "ISC"
+  "author": {
+    "name": "Grigorii Sharapov",
+    "email": "socaseinpoint@gmail.com",
+    "url": "https://github.com/socaseinpoint"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/socaseinpoint/ask-kit.git"
+  },
+  "homepage": "https://github.com/socaseinpoint/ask-kit#readme",
+  "bugs": {
+    "url": "https://github.com/socaseinpoint/ask-kit/issues"
+  }
 }

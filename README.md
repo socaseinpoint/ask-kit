@@ -55,14 +55,26 @@ npm install ask-kit
 
 ## Quick Start
 
-```javascript
-import { QuestModule, RewardSystem, Analytics } from 'ask-kit';
+### TypeScript/ES Modules
+```typescript
+import { dump, VERSION } from 'ask-kit'
 
-// Initialize core modules
-const questSystem = new QuestModule(config);
-const rewards = new RewardSystem(config);
-const analytics = new Analytics(config);
+console.log('ASK Kit Version:', VERSION)
+dump() // Example utility function
 ```
+
+### CommonJS
+```javascript
+const { dump, VERSION } = require('ask-kit')
+
+console.log('ASK Kit Version:', VERSION)
+dump() // Example utility function
+```
+
+### More Examples
+See the `examples/` directory for complete TypeScript examples:
+- `examples/basic-usage/` - ESM TypeScript example
+- `examples/commonjs-usage/` - CommonJS TypeScript example
 
 ## Technical Features
 
@@ -72,6 +84,22 @@ const analytics = new Analytics(config);
 - Real-time features
 - High-load ready components
 - Automated testing and quality control
+
+## Documentation
+
+- [Development Guide](./docs/DEVELOPMENT.md) - Setup and development workflow
+- [Deployment Guide](./docs/DEPLOYMENT.md) - Complete publishing guide
+- [Quick Deploy](./docs/QUICK_DEPLOY.md) - Fast track to npm publishing
+- [Architecture](./docs/ARCHITECTURE.md) - System design and structure
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes and test: `npm run prepublishOnly`
+4. Commit your changes: `git commit -m 'Add amazing feature'`
+5. Push to the branch: `git push origin feature/amazing-feature`
+6. Open a Pull Request
 
 ## Contact
 
