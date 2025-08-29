@@ -1,6 +1,6 @@
 {
   "name": "ask-kit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A comprehensive gamification engine for Telegram mini-apps that enables rapid development of engaging social applications.",
   "type": "module",
   "main": "./dist/ask-kit.umd.cjs",
