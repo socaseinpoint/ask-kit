@@ -7,7 +7,7 @@
 export { default as dump } from './utils/dump'
 
 // Version - automatically updated from package.json
-export const VERSION = '0.0.2'
+export const VERSION = '0.0.3'
 
 // Default export for convenience
 export default {

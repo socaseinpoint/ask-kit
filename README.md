@@ -169,7 +169,7 @@ import {
 
 // Usage
 dump()              // Logs: "I have no mouth but I must scream"
-console.log(VERSION) // Logs: "0.0.2"
+console.log(VERSION) // Logs: "0.0.3"
 ```
 
 ### Coming Soon
@@ -193,13 +193,17 @@ Future versions will include:
 
 ## Changelog
 
-### v0.0.2 (Latest)
+### v0.0.3 (Latest)
+- ✅ Fixed VERSION export to show correct package version
+- ✅ Automatic version synchronization system
+- ✅ Improved release workflow with npm hooks
+- ✅ Enhanced development and deployment automation
+
+### v0.0.2
 - ✅ Enhanced documentation with comprehensive usage examples
 - ✅ npm badges and package information
 - ✅ Real-world integration examples
 - ✅ Complete Usage Guide and API reference
-- ✅ Browser compatibility and CDN support
-- ✅ Troubleshooting and development setup
 
 ### v0.0.1
 - ✅ Initial release with basic TypeScript setup

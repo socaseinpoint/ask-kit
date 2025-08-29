@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.3] - 2024-12-28
+
+### Fixed
+- Fixed VERSION export to correctly show package version (now shows 0.0.3 instead of hardcoded 0.0.1)
+- Added automatic version synchronization between package.json and src/index.ts
+
+### Added
+- `scripts/update-version.cjs` - Automatic version sync script
+- `preversion` and `postversion` npm hooks for automated workflow
+- ESLint ignore for .cjs files in scripts directory
+
+### Technical
+- Now when running `npm version patch/minor/major`, the VERSION constant is automatically updated
+- Improved release workflow with automatic version management
+
 ## [0.0.2] - 2024-12-28
 
 ### Added
