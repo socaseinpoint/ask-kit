@@ -2,13 +2,73 @@
   "name": "ask-kit",
   "version": "0.0.1",
   "description": "A comprehensive gamification engine for Telegram mini-apps that enables rapid development of engaging social applications.",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/ask-kit.umd.cjs",
+  "module": "./dist/ask-kit.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ask-kit.js",
+      "require": "./dist/ask-kit.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs"
+  ],
   "directories": {
     "doc": "docs"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,js}\" \"examples/**/*.{ts,js}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js}\" \"examples/**/*.{ts,js}\"",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run lint:check && npm run type-check && npm run build",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^14.0.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "telegram",
+    "mini-app",
+    "gamification",
+    "social",
+    "kit",
+    "modules",
+    "typescript"
+  ],
   "author": "socaseinpoint",
   "license": "ISC"
 }

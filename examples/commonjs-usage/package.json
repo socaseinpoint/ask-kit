@@ -1,0 +1,17 @@
+{
+  "name": "ask-kit-commonjs-example",
+  "version": "1.0.0",
+  "description": "TypeScript CommonJS example usage of ask-kit package",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "dependencies": {
+    "ask-kit": "file:../.."
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.0.0"
+  }
+}

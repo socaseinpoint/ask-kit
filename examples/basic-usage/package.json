@@ -1,0 +1,19 @@
+{
+  "name": "ask-kit-example",
+  "version": "1.0.0",
+  "description": "TypeScript example usage of ask-kit package",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsc --watch & node --watch dist/index.js"
+  },
+  "dependencies": {
+    "ask-kit": "file:../.."
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.0.0"
+  }
+}
